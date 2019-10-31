@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+# Love my Robot 💙 ![robot](img/moon-rover.png)
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
 
-## Commands
+En este proyecto usted utilizara todo su conocimiento aprendido durante el curso, quemocion !
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+- Python Flask
+- Nodejs
+- Javascript
+- Redis*
+- REST
+- Docker
 
-## Project layout
+# Description
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Usted estara encargado de enseñar aquello por lo cual usted aqui, programar, a niños !
+
+![kids](img/kids.jpg)
+
+
+Los niños aprenderan a programar a [Cozmo](https://www.youtube.com/watch?v=DHY5kpGTsDE), "The smartest, cutest AI-powered robot you’ve ever seen".
+
+Utilizaremos nuestro propio lenguaje interpreteado llamado LMR (love-my-robot) que estara compuesto de un set de instrucciones limitado por el SDK de Cozmo; algunas categorias de este instruction set seran:
+
+- Drive: controlaran en que direccion se movera cozmo y qué tan rapido.
+- Actions: para controlar su cara y expresiones, su levanta carga
+
+
+# Architecture Overview
+
+
+
