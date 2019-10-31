@@ -1,4 +1,4 @@
-# Love my Robot 💙 ![robot](img/moon-rover.png)
+# Love my Robot 💙 ![robot](img/robot.png)
 
 
 En este proyecto usted utilizara todo su conocimiento aprendido durante el curso, quemocion !
