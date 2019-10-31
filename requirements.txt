@@ -1,0 +1,3 @@
+mkdocs
+mkdocs-markdownextradata-plugin
+mkdocs-bootswatch

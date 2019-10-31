@@ -1,0 +1,15 @@
+site_name: Proyecto Final
+
+
+theme: flatly
+
+plugins:
+    - search
+    - markdownextradata: {}
+
+
+nav:
+    - Overview: index.md
+    - GUI: gui.md
+    - Interpreter: interpreter.md
+    - Cozmo: cozmo.md

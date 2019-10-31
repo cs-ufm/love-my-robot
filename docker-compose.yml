@@ -1,0 +1,10 @@
+version: "3.5"
+
+services:
+    docs:
+        build:
+            context: .
+            dockerfile: docs.Dockerfile
+        image: mcano/docs
+        ports:
+        - 8000:80
