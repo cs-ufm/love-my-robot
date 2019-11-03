@@ -52,11 +52,31 @@
                             <li class="active">
                                 <a href="./">GUI</a>
                             </li>
-                            <li >
-                                <a href="../interpreter/">Interpreter</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">LEX <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../lex/">Lex API</a>
+</li>
+                                    
+<li >
+    <a href="../lmr/">LMR</a>
+</li>
+                                    
+<li >
+    <a href="../cozmo/">Cozmo</a>
+</li>
+                                </ul>
                             </li>
                             <li >
-                                <a href="../cozmo/">Cozmo</a>
+                                <a href="../examples/">Examples</a>
+                            </li>
+                            <li >
+                                <a href="../redis/">Redis</a>
+                            </li>
+                            <li >
+                                <a href="../extras/">Extras</a>
                             </li>
                         </ul>
 
@@ -72,7 +92,7 @@
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../interpreter/">
+                                <a rel="prev" href="../lex/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -85,11 +105,51 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#gui">GUI</a></li>
+            <li><a href="#ui-mock">UI Mock</a></li>
+        <li class="main "><a href="#requeriments">Requeriments</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="gui">GUI</h1></div>
+<h1 id="gui">GUI</h1>
+<p>En esta interfaz se podra programar de una manera:</p>
+<ul>
+<li>intuitiva</li>
+<li>que sea facil de ubicar cada elemento</li>
+<li>para un nino (colores, etc etc)</li>
+</ul>
+<hr />
+<p>El usuario tendra un white board donde podra armar su programa en <a href="../lmr/">LMR</a>, este whiteboard e interfaz puede tener 2 approachs (pero no limitado a estos 2, si usted tiene una mejor maner de hacerlo es bienvenido a utillizar su manera)</p>
+<ul>
+<li>
+<p><strong>Restricted:</strong> Select =&gt; Click =&gt; Add predefined instructions; el usuario puede seleccionar de varias dropdowns de categorias cuál instruccion desea añadir. (esta es la opcion que se muestra en el <a href="#ui-mock">mock</a>). Agregue un <a href="../examples/#todo-list">ToDO list</a> como ejemplo de como puede anadir elementos on the fly.</p>
+</li>
+<li>
+<p><strong>Free Mode:</strong> un modo mas avanzado, en donde se tendra siempre una lista (pero sera mas como ayuda), pero el usuario podra programar en un <a href="../examples/#live-code-editor">"Live Text Editor"</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="ui-mock">UI Mock</h2>
+<p><img alt="gui" src="../img/gui.png" /></p>
+<p><br></p>
+<ul>
+<li>Observe como la categorias estan arriba del scratchboard</li>
+<li>vea la opcion de "X" de remover cada linea.</li>
+<li>Cada categoria tendra su <a href="../lmr/">lista de comandos soportados</a></li>
+<li>Hay un boton de "Ejecutar" (obligatorio) que enviara su codigo hacia <a href="../lex/">Lex</a></li>
+<li>No habra mas rutas que <code>/</code>, almenos que usted lo quiera distinto.</li>
+</ul>
+<p><br></p>
+<blockquote>
+<p>A mockup is a visual way of representing a product, it is not written in stone, feel free to change, add, remove whatever you need to.</p>
+</blockquote>
+<hr />
+<h1 id="requeriments">Requeriments</h1>
+<ul>
+<li>DEBE estar escrito y hecho en <strong>NodeJS (Express JS)</strong></li>
+<li>Para el frontend puede utilizar Javascript como considere necesario</li>
+<li>Puede usar Server Side rendering y usar algun <a href="https://expressjs.com/en/guide/using-template-engines.html">template engine</a>, como recomendacion vea: <a href="https://www.npmjs.com/package/mustache">Mustache</a> o Jade (Pug)</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">

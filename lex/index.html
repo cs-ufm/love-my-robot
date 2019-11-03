@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Interpreter - Proyecto Final</title>
+        <title>Lex API - Proyecto Final</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -52,11 +52,31 @@
                             <li >
                                 <a href="../gui/">GUI</a>
                             </li>
-                            <li class="active">
-                                <a href="./">Interpreter</a>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">LEX <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">Lex API</a>
+</li>
+                                    
+<li >
+    <a href="../lmr/">LMR</a>
+</li>
+                                    
+<li >
+    <a href="../cozmo/">Cozmo</a>
+</li>
+                                </ul>
                             </li>
                             <li >
-                                <a href="../cozmo/">Cozmo</a>
+                                <a href="../examples/">Examples</a>
+                            </li>
+                            <li >
+                                <a href="../redis/">Redis</a>
+                            </li>
+                            <li >
+                                <a href="../extras/">Extras</a>
                             </li>
                         </ul>
 
@@ -72,7 +92,7 @@
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../cozmo/">
+                                <a rel="prev" href="../lmr/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -84,12 +104,40 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#interpreter">Interpreter</a></li>
+        <li class="main active"><a href="#lex">Lex</a></li>
+        <li class="main "><a href="#root">/root</a></li>
+        <li class="main "><a href="#lex_1">/lex</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="interpreter">Interpreter</h1></div>
+<h1 id="lex">Lex</h1>
+<p>Lex sera el API responsable de "Transpilar" su codigo escrito en LMR.</p>
+<p>Tendra 2 <code>@routes</code> (no esta limitado a estos 2 unicamente, usted puede agregarle mas)</p>
+<ul>
+<li><code>/</code></li>
+<li><code>/lex</code></li>
+</ul>
+<h1 id="root">/root</h1>
+<p>El root sera endpoint grafico que desplegara: el codigo Python Transpilado y la hora que fue hecho el request.</p>
+<p><img alt="lex" src="../img/lex.png" /></p>
+<h1 id="lex_1">/lex</h1>
+<p>POST endpoint para Procesar/ Ejecutar el codigo.</p>
+<p><code>Recibe LMR =&gt; [Lex] =&gt; Transpile to Python =&gt; [Execute to Cozmo]</code></p>
+<p>El codigo vendra en el request payload [^1]</p>
+<pre><code class="json">{
+    &quot;request_timestamp&quot;: &quot;Sun Nov  3 01:42:41 CST 2019&quot;,
+    &quot;lmr&quot;: &quot;SAY HI\nMOVE 50 100&quot;
+}
+
+</code></pre>
+
+<p><br></p>
+<p>[^1]: Ojo que se puede utilizar <a href="../redis/">Redis</a> para evitar enviar una llamada REST y utilizar canales real-time.</p>
+<p><br><br><br><br></p>
+<blockquote>
+<p><strong>Transpilers</strong>, or source-to-source compilers, are tools that read source code written in one programming language, and produce the equivalent code in another language.</p>
+</blockquote></div>
         </div>
 
         <footer class="col-md-12">

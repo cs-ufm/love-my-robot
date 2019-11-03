@@ -52,11 +52,31 @@
                             <li >
                                 <a href="gui/">GUI</a>
                             </li>
-                            <li >
-                                <a href="interpreter/">Interpreter</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">LEX <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="lex/">Lex API</a>
+</li>
+                                    
+<li >
+    <a href="lmr/">LMR</a>
+</li>
+                                    
+<li >
+    <a href="cozmo/">Cozmo</a>
+</li>
+                                </ul>
                             </li>
                             <li >
-                                <a href="cozmo/">Cozmo</a>
+                                <a href="examples/">Examples</a>
+                            </li>
+                            <li >
+                                <a href="redis/">Redis</a>
+                            </li>
+                            <li >
+                                <a href="extras/">Extras</a>
                             </li>
                         </ul>
 
@@ -84,28 +104,49 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
-            <li><a href="#commands">Commands</a></li>
-            <li><a href="#project-layout">Project layout</a></li>
+        <li class="main active"><a href="#love-my-robot">Love my Robot 💙</a></li>
+        <li class="main "><a href="#description">Description</a></li>
+        <li class="main "><a href="#architecture-overview">Architecture Overview</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#flow">Flow</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="love-my-robot">Love my Robot 💙 <img alt="robot" src="img/robot.png" /></h1>
+<p>En este proyecto usted utilizara todo su conocimiento aprendido durante el curso, quemocion !</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li>Python Flask</li>
+<li>Nodejs</li>
+<li>Javascript</li>
+<li>Redis*</li>
+<li>REST</li>
+<li>Docker</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<hr />
+<h1 id="description">Description</h1>
+<p>Usted estara encargado de enseñar aquello por lo cual usted aqui, programar, a niños !</p>
+<p><img alt="kids" src="img/kids.jpg" /></p>
+<p>Los niños aprenderan a programar a <a href="https://www.youtube.com/watch?v=DHY5kpGTsDE">Cozmo</a>, "The smartest, cutest AI-powered robot you’ve ever seen".</p>
+<p>Utilizaremos nuestro propio lenguaje interpreteado llamado LMR (love-my-robot) que estara compuesto de un set de instrucciones limitado por el SDK de Cozmo; algunas categorias de este instruction set seran:</p>
+<ul>
+<li>Drive: controlaran en que direccion se movera cozmo y qué tan rapido.</li>
+<li>Actions: para controlar su cara y expresiones, su levanta carga</li>
+</ul>
+<h1 id="architecture-overview">Architecture Overview</h1>
+<p><img alt="robot" src="img/arobot.png" /></p>
+<h2 id="services">Services</h2>
+<ul>
+<li><a href="gui/">GUI</a></li>
+<li><a href="lex/">LEX</a></li>
+<li><a href="redis/">Redis (Opcional)</a></li>
+</ul>
+<h2 id="flow">Flow</h2>
+<ul>
+<li>Un GUI para que los niños puedan programar en LMR</li>
+<li>Una vez estan listos para que el robot ejecute su programa, el programa se envia REST hacia LEX</li>
+<li>Cozmo Ejecuta el codigo.</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
@@ -188,5 +229,5 @@ docs/
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-10-31 12:58:13
+Build Date UTC : 2019-11-03 07:50:59
 -->
