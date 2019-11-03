@@ -9,13 +9,17 @@ plugins:
 
 
 nav:
-    - Overview: index.md
+    - Overview:
+        - Intructions: index.md
+        - Getting Started: getting_started.md
     - GUI: gui.md
     - LEX:
         - Lex API: lex.md
         - LMR: lmr.md
         - Cozmo: cozmo.md
-    - Examples: examples.md
-    - Redis: redis.md
-    - Extras: extras.md
+
+    - Extras:
+        - Examples: examples.md
+        - Redis: redis.md
+        - Puntos Extras: extras.md
 

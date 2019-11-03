@@ -34,7 +34,7 @@ El usuario tendra un white board donde podra armar su programa en [LMR](lmr.md),
 
 ---
 
-# Requeriments
+# Requirements
 
 - DEBE estar escrito y hecho en **NodeJS (Express JS)**
 - Para el frontend puede utilizar Javascript como considere necesario
