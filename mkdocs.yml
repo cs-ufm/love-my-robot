@@ -16,4 +16,6 @@ nav:
         - LMR: lmr.md
         - Cozmo: cozmo.md
     - Examples: examples.md
+    - Redis: redis.md
+    - Extras: extras.md
 

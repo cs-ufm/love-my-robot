@@ -9,7 +9,10 @@ Tendra 2 `@routes` (no esta limitado a estos 2 unicamente, usted puede agregarle
 
 # /root
 
+El root sera endpoint grafico que desplegara el siguiente mockup.
 
+
+![lex](img/lex.png)
 
 # /lex
 
