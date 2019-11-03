@@ -1,4 +1,4 @@
-# Love My Robot Pseudo Code
+# Love My Robot (LMR) Pseudo Code
 
 Habra categorias de comandos en LMR:
 
@@ -126,7 +126,3 @@ WHEELIE 2
 
 
 ---
-
-# Definition
-
-La definicion de nuestro es la siguiente:

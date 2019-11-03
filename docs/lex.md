@@ -20,7 +20,7 @@ POST endpoint para Procesar/ Ejecutar el codigo.
 
 `Recibe LMR => [Lex] => Transpile to Python => [Execute to Cozmo]`
 
-El codigo vendra en el request payload [^1]
+El codigo vendra en el request payload <sup>[1](#1footnote)</sup>
 
 ```json
 {
@@ -32,7 +32,12 @@ El codigo vendra en el request payload [^1]
 
 <br>
 
-[^1]: Ojo que se puede utilizar [Redis](redis.md) para evitar enviar una llamada REST y utilizar canales real-time.
+
+Obviamente debe devolver un status code dependiendo del resultado de ejecutar el programa.
+
+
+
+<a name="1footnote">1</a>: Ojo que se puede utilizar [Redis](redis.md) para evitar enviar una llamada REST y utilizar canales real-time.
 
 
 

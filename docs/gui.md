@@ -8,7 +8,7 @@ En esta interfaz se podra programar de una manera:
 
 ---
 
-El usuario tendra un white board donde podra armar su programa en [LMR](lmr.md), este whiteboard e interfaz puede tener 2 approachs (pero no limitado a estos 2, si usted tiene una mejor maner de hacerlo es bienvenido a utillizar su manera)
+El usuario tendra un white board donde podra armar su programa en [LMR](lmr.md), este whiteboard e interfaz puede tener 2 opciones excluyentes (pero no limitado a estos 2, si usted tiene una mejor maner de hacerlo es bienvenido a utillizar su manera)
 
 - **Restricted:** Select => Click => Add predefined instructions; el usuario puede seleccionar de varias dropdowns de categorias cuál instruccion desea añadir. (esta es la opcion que se muestra en el [mock](#ui-mock)). Agregue un [ToDO list](examples.md#todo-list) como ejemplo de como puede anadir elementos on the fly.
 
