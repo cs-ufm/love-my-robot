@@ -13,6 +13,6 @@ Este documento provee informacion de como comenzar su proyecto y como comenzar a
 
 - La entrega sera presencial
 - **TODOS** deberan presentarse
-- Si alguien falta tendra 0 automaticamente
+- Si alguien falta tendra 0 automaticamente, NO HABRA EXCEPCIONES (ni viaje, ni enfermedad, ni accidentes)
 - **TODOS**  Deben de tener commits, es la unica forma que puedo comprobar que trabajaron.
-- **TODOS**  deben de poder defender todo el proyecto, no existira tal como "es que yo solo hice esto o aquello", la nota de cada uno afectara al grupo.
+- **TODOS**  deben de poder defender todo el proyecto, no existira tal como "es que yo solo hice esto o aquello", **la nota individual de cada integrante afectara al grupo**.

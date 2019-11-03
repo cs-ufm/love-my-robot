@@ -36,6 +36,6 @@ El usuario tendra un white board donde podra armar su programa en [LMR](lmr.md),
 
 # Requirements
 
-- DEBE estar escrito y hecho en **NodeJS (Express JS)**
+- DEBE estar escrito y hecho en [**NodeJS (Express JS)**](https://expressjs.com/en/starter/hello-world.html)
 - Para el frontend puede utilizar Javascript como considere necesario
 - Puede usar Server Side rendering y usar algun [template engine](https://expressjs.com/en/guide/using-template-engines.html), como recomendacion vea: [Mustache](https://www.npmjs.com/package/mustache) o Jade (Pug)

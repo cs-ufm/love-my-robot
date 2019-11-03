@@ -3,7 +3,8 @@
 
 En este proyecto usted utilizara todo su conocimiento aprendido durante el curso, quemocion !
 
-- Python Flask
+- Python
+- Flask
 - Nodejs
 - Javascript
 - Redis*

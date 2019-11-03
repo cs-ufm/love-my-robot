@@ -1,5 +1,5 @@
 
-## hello flask non async
+## hello Cozmo flask non async
 ```python
 
 #!/usr/bin/env python3
@@ -28,11 +28,7 @@ if __name__ == "__main__":
 ```
 ----
 
-## docker-compose.yml
-```yaml
 
-
-```
 
 ---
 ## Live Code Editor
@@ -179,6 +175,6 @@ dispatch = {
 def process_network_command(command, arg):
     send(dispatch[command](arg))
 ```
-
-> quizas le pueda servir para ahorrase ese "if elif gigante"
+<br>
+> quizas le pueda servir para ahorrase ese "`if: elif:` gigante"
 ---
