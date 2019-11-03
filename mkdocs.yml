@@ -11,5 +11,9 @@ plugins:
 nav:
     - Overview: index.md
     - GUI: gui.md
-    - Interpreter: interpreter.md
-    - Cozmo: cozmo.md
+    - LEX:
+        - Lex API: lex.md
+        - LMR: lmr.md
+        - Cozmo: cozmo.md
+    - Examples: examples.md
+

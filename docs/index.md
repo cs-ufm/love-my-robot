@@ -9,6 +9,7 @@ En este proyecto usted utilizara todo su conocimiento aprendido durante el curso
 - Redis*
 - REST
 - Docker
+---
 
 # Description
 
@@ -28,4 +29,17 @@ Utilizaremos nuestro propio lenguaje interpreteado llamado LMR (love-my-robot) q
 # Architecture Overview
 
 
+![robot](img/arobot.png)
 
+
+## Services
+
+- [GUI](gui.md)
+- [LEX](lex.md)
+- [Redis (Opcional)](redis.md)
+
+## Flow
+
+- Un GUI para que los niños puedan programar en LMR
+- Una vez estan listos para que el robot ejecute su programa, el programa se envia REST hacia LEX
+- Cozmo Ejecuta el codigo.

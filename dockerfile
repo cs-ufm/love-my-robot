@@ -18,5 +18,5 @@ RUN mkdocs build
 # and use a nginx image to serve the content
 FROM nginx:alpine
 COPY --from=build /app/site /usr/share/nginx/html
-COPY  nginx /etc/nginx/conf.d/
+#COPY  nginx /etc/nginx/conf.d/
 EXPOSE 80
