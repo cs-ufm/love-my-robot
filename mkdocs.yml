@@ -19,7 +19,7 @@ nav:
         - Cozmo: cozmo.md
 
     - Extras:
-        - Examples: examples.md
+        - A gift to you: agift.md
         - Redis: redis.md
         - Puntos Extras: extras.md
 
