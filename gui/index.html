@@ -46,8 +46,18 @@
                 <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="..">Overview</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="..">Intructions</a>
+</li>
+                                    
+<li >
+    <a href="../getting_started/">Getting Started</a>
+</li>
+                                </ul>
                             </li>
                             <li class="active">
                                 <a href="./">GUI</a>
@@ -69,14 +79,22 @@
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="../examples/">Examples</a>
-                            </li>
-                            <li >
-                                <a href="../redis/">Redis</a>
-                            </li>
-                            <li >
-                                <a href="../extras/">Extras</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../examples/">Examples</a>
+</li>
+                                    
+<li >
+    <a href="../redis/">Redis</a>
+</li>
+                                    
+<li >
+    <a href="../extras/">Puntos Extras</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -87,7 +105,7 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="..">
+                                <a rel="next" href="../getting_started/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -106,7 +124,7 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#gui">GUI</a></li>
             <li><a href="#ui-mock">UI Mock</a></li>
-        <li class="main "><a href="#requeriments">Requeriments</a></li>
+        <li class="main "><a href="#requirements">Requirements</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -119,7 +137,7 @@
 <li>para un nino (colores, etc etc)</li>
 </ul>
 <hr />
-<p>El usuario tendra un white board donde podra armar su programa en <a href="../lmr/">LMR</a>, este whiteboard e interfaz puede tener 2 approachs (pero no limitado a estos 2, si usted tiene una mejor maner de hacerlo es bienvenido a utillizar su manera)</p>
+<p>El usuario tendra un white board donde podra armar su programa en <a href="../lmr/">LMR</a>, este whiteboard e interfaz puede tener 2 opciones excluyentes (pero no limitado a estos 2, si usted tiene una mejor maner de hacerlo es bienvenido a utillizar su manera)</p>
 <ul>
 <li>
 <p><strong>Restricted:</strong> Select =&gt; Click =&gt; Add predefined instructions; el usuario puede seleccionar de varias dropdowns de categorias cuál instruccion desea añadir. (esta es la opcion que se muestra en el <a href="#ui-mock">mock</a>). Agregue un <a href="../examples/#todo-list">ToDO list</a> como ejemplo de como puede anadir elementos on the fly.</p>
@@ -144,9 +162,9 @@
 <p>A mockup is a visual way of representing a product, it is not written in stone, feel free to change, add, remove whatever you need to.</p>
 </blockquote>
 <hr />
-<h1 id="requeriments">Requeriments</h1>
+<h1 id="requirements">Requirements</h1>
 <ul>
-<li>DEBE estar escrito y hecho en <strong>NodeJS (Express JS)</strong></li>
+<li>DEBE estar escrito y hecho en <a href="https://expressjs.com/en/starter/hello-world.html"><strong>NodeJS (Express JS)</strong></a></li>
 <li>Para el frontend puede utilizar Javascript como considere necesario</li>
 <li>Puede usar Server Side rendering y usar algun <a href="https://expressjs.com/en/guide/using-template-engines.html">template engine</a>, como recomendacion vea: <a href="https://www.npmjs.com/package/mustache">Mustache</a> o Jade (Pug)</li>
 </ul></div>

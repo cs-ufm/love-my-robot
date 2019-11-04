@@ -46,8 +46,18 @@
                 <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="..">Overview</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="..">Intructions</a>
+</li>
+                                    
+<li >
+    <a href="../getting_started/">Getting Started</a>
+</li>
+                                </ul>
                             </li>
                             <li >
                                 <a href="../gui/">GUI</a>
@@ -69,14 +79,22 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="active">
-                                <a href="./">Examples</a>
-                            </li>
-                            <li >
-                                <a href="../redis/">Redis</a>
-                            </li>
-                            <li >
-                                <a href="../extras/">Extras</a>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">Examples</a>
+</li>
+                                    
+<li >
+    <a href="../redis/">Redis</a>
+</li>
+                                    
+<li >
+    <a href="../extras/">Puntos Extras</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -104,17 +122,15 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#hello-flask-non-async">hello flask non async</a></li>
-        <li class="main "><a href="#docker-composeyml">docker-compose.yml</a></li>
+        <li class="main active"><a href="#hello-cozmo-flask-non-async">hello Cozmo flask non async</a></li>
         <li class="main "><a href="#live-code-editor">Live Code Editor</a></li>
         <li class="main "><a href="#todo-list">ToDo List</a></li>
         <li class="main "><a href="#python-callbacks-from-a-dictionary-of-functions">Python Callbacks from a dictionary of functions</a></li>
-        <li class="main "><a href="#quizas-le-pueda-servir-para-ahorrase-ese-if-elif-gigante">&gt; quizas le pueda servir para ahorrase ese "if elif gigante"</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="hello-flask-non-async">hello flask non async</h2>
+<h2 id="hello-cozmo-flask-non-async">hello Cozmo flask non async</h2>
 <pre><code class="python">
 #!/usr/bin/env python3
 
@@ -142,11 +158,6 @@ if __name__ == &quot;__main__&quot;:
 </code></pre>
 
 <hr />
-<h2 id="docker-composeyml">docker-compose.yml</h2>
-<pre><code class="yaml">
-
-</code></pre>
-
 <hr />
 <h2 id="live-code-editor">Live Code Editor</h2>
 <blockquote>
@@ -290,7 +301,11 @@ def process_network_command(command, arg):
     send(dispatch[command](arg))
 </code></pre>
 
-<h2 id="quizas-le-pueda-servir-para-ahorrase-ese-if-elif-gigante">&gt; quizas le pueda servir para ahorrase ese "if elif gigante"</h2></div>
+<p><br></p>
+<blockquote>
+<p>quizas le pueda servir para ahorrase ese "<code>if: elif:</code> gigante"</p>
+</blockquote>
+<hr /></div>
         </div>
 
         <footer class="col-md-12">

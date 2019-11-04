@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
+        
         
         
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Proyecto Final</title>
+        <title>Intructions - Proyecto Final</title>
         <link href="css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
@@ -25,7 +25,7 @@
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -46,8 +46,18 @@
                 <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href=".">Overview</a>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href=".">Intructions</a>
+</li>
+                                    
+<li >
+    <a href="getting_started/">Getting Started</a>
+</li>
+                                </ul>
                             </li>
                             <li >
                                 <a href="gui/">GUI</a>
@@ -69,14 +79,22 @@
 </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="examples/">Examples</a>
-                            </li>
-                            <li >
-                                <a href="redis/">Redis</a>
-                            </li>
-                            <li >
-                                <a href="extras/">Extras</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="examples/">Examples</a>
+</li>
+                                    
+<li >
+    <a href="redis/">Redis</a>
+</li>
+                                    
+<li >
+    <a href="extras/">Puntos Extras</a>
+</li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -92,7 +110,7 @@
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="gui/">
+                                <a rel="prev" href="getting_started/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -116,7 +134,8 @@
 <h1 id="love-my-robot">Love my Robot 💙 <img alt="robot" src="img/robot.png" /></h1>
 <p>En este proyecto usted utilizara todo su conocimiento aprendido durante el curso, quemocion !</p>
 <ul>
-<li>Python Flask</li>
+<li>Python</li>
+<li>Flask</li>
 <li>Nodejs</li>
 <li>Javascript</li>
 <li>Redis*</li>
@@ -128,7 +147,7 @@
 <p>Usted estara encargado de enseñar aquello por lo cual usted aqui, programar, a niños !</p>
 <p><img alt="kids" src="img/kids.jpg" /></p>
 <p>Los niños aprenderan a programar a <a href="https://www.youtube.com/watch?v=DHY5kpGTsDE">Cozmo</a>, "The smartest, cutest AI-powered robot you’ve ever seen".</p>
-<p>Utilizaremos nuestro propio lenguaje interpreteado llamado LMR (love-my-robot) que estara compuesto de un set de instrucciones limitado por el SDK de Cozmo; algunas categorias de este instruction set seran:</p>
+<p>Utilizaremos nuestro propio lenguaje interpreteado llamado <a href="lmr/">LMR</a> (love-my-robot) que estara compuesto de un set de instrucciones limitado por el SDK de Cozmo; algunas categorias de este instruction set seran:</p>
 <ul>
 <li>Drive: controlaran en que direccion se movera cozmo y qué tan rapido.</li>
 <li>Actions: para controlar su cara y expresiones, su levanta carga</li>
@@ -143,7 +162,7 @@
 </ul>
 <h2 id="flow">Flow</h2>
 <ul>
-<li>Un GUI para que los niños puedan programar en LMR</li>
+<li>Un GUI para que los niños puedan programar en <a href="lmr/">LMR</a></li>
 <li>Una vez estan listos para que el robot ejecute su programa, el programa se envia REST hacia LEX</li>
 <li>Cozmo Ejecuta el codigo.</li>
 </ul></div>
@@ -226,8 +245,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-11-03 07:50:59
--->
