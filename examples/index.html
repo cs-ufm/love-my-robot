@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>A gift to you - Proyecto Final</title>
+        <title>LMR - Proyecto Final</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -79,12 +79,12 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="./">A gift to you</a>
+<li >
+    <a href="../agift/">A gift to you</a>
 </li>
                                     
 <li >
@@ -104,16 +104,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../cozmo/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../redis/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -122,204 +112,15 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#how-to-run-your-generated-code">How to run your generated code?</a></li>
-        <li class="main "><a href="#hello-cozmo-flask-non-async">hello Cozmo flask non async</a></li>
-        <li class="main "><a href="#live-code-editor">Live Code Editor</a></li>
-        <li class="main "><a href="#todo-list">ToDo List</a></li>
-        <li class="main "><a href="#python-callbacks-from-a-dictionary-of-functions">Python Callbacks from a dictionary of functions</a></li>
+        <li class="main active"><a href="#lmr">LMR</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="how-to-run-your-generated-code">How to run your generated code?</h2>
-<p>Una forma que es la que les recomiendo es importarlo como modulo</p>
-<pre><code class="python"># vea como importamos el modulo dentro de una funcion, eso es dynamic import.
-def run_program:
-    # asumiendo que:
-    # - se genero &quot;generated_cozmo_program.py&quot;
-    # - cada programa generado tiene una funcion estatica &quot;run&quot; dentro de la clase &quot;transpiled&quot;
-    import generated_cozmo_program
-    # o podria usar from x import Y
-    transpiled.run()
-</code></pre>
+<h1 id="lmr">LMR</h1>
+<pre><code>
 
-<hr />
-<h2 id="hello-cozmo-flask-non-async">hello Cozmo flask non async</h2>
-<pre><code class="python">
-#!/usr/bin/env python3
-
-import cozmo
-from flask import Flask
-app = Flask(__name__)
-
-
-
-def cozmo_program(robot: cozmo.robot.Robot):
-    robot.say_text(&quot;Hello Flask&quot;).wait_for_completed()
-
-
-@app.route('/')
-def hello_world():
-    cozmo.run_program(cozmo_program)
-
-    return 'Hello, World!'
-
-
-if __name__ == &quot;__main__&quot;:
-    app.run(host=&quot;0.0.0.0&quot;)
-
-
-</code></pre>
-
-<hr />
-<hr />
-<h2 id="live-code-editor">Live Code Editor</h2>
-<blockquote>
-<p>si toman otro approach y dejan que los usuarios escriban su codigo les dejo este HTML que embebe un live code editor y aqui la <a href="https://ace.c9.io/#nav=about">documentacion</a></p>
-</blockquote>
-<details>
-  <summary>Click to expand!</summary>
-
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;title&gt;ACE in Action&lt;/title&gt;
-&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
-    #editor {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;div id=&quot;editor&quot;&gt;function foo(items) {
-    var x = &quot;All this is syntax highlighted&quot;;
-    return x;
-}&lt;/div&gt;
-
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.6/ace.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-    var editor = ace.edit(&quot;editor&quot;);
-    editor.setTheme(&quot;ace/theme/monokai&quot;);
-    editor.session.setMode(&quot;ace/mode/javascript&quot;);
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
-</code></pre>
-
-</details>
-
-<hr />
-<h2 id="todo-list">ToDo List</h2>
-<blockquote>
-<p>Les entrego un To DO list hecho en html y javascript, les puede servir para ir "agregando" lineas a su programa. Obviamente aqui el source de los elementos es un text-box.</p>
-</blockquote>
-<details>
-  <summary>Click to expand!</summary>
-
-<pre><code class="html">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;input id=&quot;task&quot;&gt;&lt;button id=&quot;add&quot;&gt;Add&lt;/button&gt;
-      &lt;hr&gt;
-    &lt;div id=&quot;todos&quot;&gt;&lt;/div&gt;
-
-
-&lt;script&gt;
-    function get_todos() {
-        var todos = new Array;
-        var todos_str = localStorage.getItem('todo');
-        if (todos_str !== null) {
-            todos = JSON.parse(todos_str);
-        }
-        return todos;
-    }
-
-    function add() {
-        var task = document.getElementById('task').value;
-
-        var todos = get_todos();
-        todos.push(task);
-        localStorage.setItem('todo', JSON.stringify(todos));
-
-        show();
-
-        return false;
-    }
-
-    function remove() {
-        var id = this.getAttribute('id');
-        var todos = get_todos();
-        todos.splice(id, 1);
-        localStorage.setItem('todo', JSON.stringify(todos));
-
-        show();
-
-        return false;
-    }
-
-    function show() {
-        var todos = get_todos();
-
-        var html = '&lt;ul&gt;';
-        for(var i=0; i&lt;todos.length; i++) {
-            html += '&lt;li&gt;' + todos[i] + '&lt;button class=&quot;remove&quot; id=&quot;' + i  + '&quot;&gt;x&lt;/button&gt;&lt;/li&gt;';
-        };
-        html += '&lt;/ul&gt;';
-
-        document.getElementById('todos').innerHTML = html;
-
-        var buttons = document.getElementsByClassName('remove');
-        for (var i=0; i &lt; buttons.length; i++) {
-            buttons[i].addEventListener('click', remove);
-        };
-    }
-
-    document.getElementById('add').addEventListener('click', add);
-    show();
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
-</code></pre>
-
-
-</details>
-
-<hr />
-<h2 id="python-callbacks-from-a-dictionary-of-functions">Python Callbacks from a dictionary of functions</h2>
-<pre><code class="python">
-def do_ping(self, arg):
-    return 'Pong, {0}!'.format(arg)
-
-def do_ls(self, arg):
-    return '\n'.join(os.listdir(arg))
-
-dispatch = {
-    'ping': do_ping,
-    'ls': do_ls,
-}
-
-def process_network_command(command, arg):
-    send(dispatch[command](arg))
-</code></pre>
-
-<p><br></p>
-<blockquote>
-<p>quizas le pueda servir para ahorrase ese "<code>if: elif:</code> gigante"</p>
-</blockquote>
-<hr /></div>
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
