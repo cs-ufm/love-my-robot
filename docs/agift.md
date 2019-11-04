@@ -1,4 +1,19 @@
 
+## How to run your generated code?
+
+Una forma que es la que les recomiendo es importarlo como modulo
+
+```python
+# vea como importamos el modulo dentro de una funcion, eso es dynamic import.
+def run_program:
+    # asumiendo que:
+    # - se genero "generated_cozmo_program.py"
+    # - cada programa generado tiene una funcion estatica "run" dentro de la clase "transpiled"
+    import generated_cozmo_program
+    # o podria usar from x import Y
+    transpiled.run()
+```
+
 ## hello Cozmo flask non async
 ```python
 

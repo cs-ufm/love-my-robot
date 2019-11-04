@@ -10,9 +10,9 @@ En esta interfaz se podra programar de una manera:
 
 El usuario tendra un white board donde podra armar su programa en [LMR](lmr.md), este whiteboard e interfaz puede tener 2 opciones excluyentes (pero no limitado a estos 2, si usted tiene una mejor maner de hacerlo es bienvenido a utillizar su manera)
 
-- **Restricted:** Select => Click => Add predefined instructions; el usuario puede seleccionar de varias dropdowns de categorias cuál instruccion desea añadir. (esta es la opcion que se muestra en el [mock](#ui-mock)). Agregue un [ToDO list](examples.md#todo-list) como ejemplo de como puede anadir elementos on the fly.
+- **Restricted:** Select => Click => Add predefined instructions; el usuario puede seleccionar de varias dropdowns de categorias cuál instruccion desea añadir. (esta es la opcion que se muestra en el [mock](#ui-mock)). Agregue un [ToDO list](agift.md#todo-list) como ejemplo de como puede anadir elementos on the fly.
 
-- **Free Mode:** un modo mas avanzado, en donde se tendra siempre una lista (pero sera mas como ayuda), pero el usuario podra programar en un ["Live Text Editor"](examples.md#live-code-editor)
+- **Free Mode:** un modo mas avanzado, en donde se tendra siempre una lista (pero sera mas como ayuda), pero el usuario podra programar en un ["Live Text Editor"](agift.md#live-code-editor)
 
 
 ---
